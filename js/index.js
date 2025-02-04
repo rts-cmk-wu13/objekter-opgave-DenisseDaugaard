@@ -18,7 +18,7 @@ heroText.classList.add("hero__text")
 heroText.innerHTML = `<h2>${hero.headline}</h2>
                      <p>${hero.copy}</p>
                      <button class="hero__text__btn"><img class="icon" src="${hero.icon}" alt=""> Explore</button>`
-console.log(heroText);
+//console.log(heroText);
 heroDocument.appendChild(heroText)
 
 /* -------------------- services section--------------*/
@@ -35,9 +35,31 @@ services.forEach(function(service){
                                 <p>${service.text}</p>
                                 <a href="#">${service.linktext}</a>
                             </section>`
-console.log(serviceCard);
+//console.log(serviceCard);
 servicesSection.append(serviceCard)
 })
+
+
+/* ----------------------------facilities------------------ */
+
+let facilitiesSection = document.querySelector(".facilities")
+
+console.log(facilities.options);
+facilities.options.forEach(function(option){
+  let facilityCard = document.createElement("div")
+  facilityCard.classList.add("facility")
+  facilityCard.innerHTML = `<figure>
+                        <img class="icon" src="${option.icon}" alt="small icon">
+                       </figure>
+                       <section class="facility__text">
+                        <h3>${option.headline}</h3>
+                        <p>${option.text}</p>
+                        <a href="#">Show more</a>
+                       </section>`
+  facilitiesSection.append(facilityCard)
+                       
+})
+
 
 
 
