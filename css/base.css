@@ -13,3 +13,9 @@ img {
 main section{
     margin-bottom: 5rem;
 }
+
+a{
+    text-decoration: none;
+    color:#F78065 ;
+    font-weight: bold;
+}

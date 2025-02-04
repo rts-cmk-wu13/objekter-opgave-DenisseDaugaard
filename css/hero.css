@@ -18,7 +18,7 @@ section.hero{
 }
 
 
-.hero__text__btn{
+button {
     background-color: #F78065 ;
     color: white;
     border: none;
