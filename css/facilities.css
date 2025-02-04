@@ -1,0 +1,14 @@
+.facility,
+.place{
+    grid-column: span 3;
+}
+
+.facility-headline{
+    grid-row: 1;
+    margin-block: 2rem ;
+    font-size: 2rem;
+}
+
+.icon__2 {
+    width: 2.5rem;
+}

@@ -2,6 +2,11 @@
     margin-top: 15rem;
 }
 
-.service {
+.service,
+.advantage{
     grid-column: span 4;
+}
+
+.service__card__img__contentainer{
+   height: 20rem;
 }

@@ -2,9 +2,6 @@ section.hero{
     position: relative;
 }
 
-.hero__img{
-    width: 72rem;
-}
 
 .hero__text{
     position: absolute;

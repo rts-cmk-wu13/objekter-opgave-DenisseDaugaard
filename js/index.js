@@ -6,10 +6,11 @@
 /* ---------------------------hero img----------- */
 let heroDocument = document.querySelector(".hero")
 
-heroDocument.classList.add("hero__img")
-let heroImg = document.createElement("img")
-heroImg.src = hero.image
-heroDocument.append(heroImg)
+let heroContainer = document.createElement("figure")
+heroContainer.classList.add("no-columns")
+heroContainer.innerHTML = `<img src="${hero.image}" alt="">`
+
+heroDocument.append(heroContainer)
 
 /* --------------hero text div---------------------- */
 let heroText = document.createElement("div")
@@ -27,7 +28,7 @@ let servicesSection = document.querySelector(".services")
 services.forEach(function(service){
   let serviceCard = document.createElement("div")
   serviceCard.classList.add("service")
-  serviceCard.innerHTML = `<figure class="service__card__img__content">
+  serviceCard.innerHTML = `<figure class="service__card__img__contentainer">
                             <img class="service__card__img" src="${service.illustration}" alt="random image">
                             </figure>
                             <section class="sercice__card__text">
@@ -44,7 +45,7 @@ servicesSection.append(serviceCard)
 
 let facilitiesSection = document.querySelector(".facilities")
 let facilitiesHeadline = document.createElement("h2")
-facilitiesHeadline.classList.add("no-columns")
+facilitiesHeadline.classList.add("no-columns" , "facility-headline")
 facilitiesHeadline.textContent = facilities.headline
 
 console.log(facilities.options);
@@ -52,14 +53,14 @@ facilities.options.forEach(function(option){
   let facilityCard = document.createElement("div")
   facilityCard.classList.add("facility")
   facilityCard.innerHTML = `<figure>
-                        <img class="icon" src="${option.icon}" alt="small icon">
+                        <img class="icon__2" src="${option.icon}" alt="small icon">
                        </figure>
                        <section class="facility__text">
                         <h3>${option.headline}</h3>
                         <p>${option.text}</p>
                         <a href="#">Show more</a>
                        </section>`
-  facilitiesSection.append( facilitiesHeadline, facilityCard)
+  facilitiesSection.append(facilityCard, facilitiesHeadline)
                        
 })
 
@@ -68,6 +69,7 @@ facilities.options.forEach(function(option){
 let sitesSection = document.querySelector(".sites")
 
 let sitesStartDiv = document.createElement("div")
+sitesStartDiv.classList.add("sites__start__div")
 sitesStartDiv.innerHTML = `<h2>${sites.headline}</h2>
                             <p>${sites.text}</p>
                             <button><img class="icon" src="${sites.btnicon}" alt="random img">Start</button>`
@@ -95,7 +97,7 @@ advantages.forEach(function(advantege){
   let advantegeCard = document.createElement("div")
   advantegeCard.classList.add("advantage")
   advantegeCard.innerHTML = `<figure>
-                        <img class="icon" src="${advantege.icon}" alt="small icon">
+                        <img class="icon__2" src="${advantege.icon}" alt="small icon">
                        </figure>
                        <section class="facility__text">
                         <h3>${advantege.headline}</h3>
