@@ -1,0 +1,7 @@
+.services{
+    margin-top: 15rem;
+}
+
+.service {
+    grid-column: span 4;
+}
