@@ -81,7 +81,7 @@ sites.places.forEach(function(place){
   placeCard.innerHTML = `<figure>
                         <img src="${place.img}" alt="image of people">
                        </figure>
-                       <section class="facility__text">
+                       <section class="place__text">
                         <h3>${place.name}</h3>
                         <p>${place.city}</p>
                         <a href="#">View the Site</a>
@@ -102,10 +102,9 @@ advantages.forEach(function(advantege){
   advantegeCard.innerHTML = `<figure>
                         <img class="icon__2" src="${advantege.icon}" alt="small icon">
                        </figure>
-                       <section class="facility__text">
+                       <section class="advantages__text">
                         <h3>${advantege.headline}</h3>
                         <p>${advantege.text}</p>
-                        <a href="#">Show more</a>
                        </section>`
   advantagesSection.append(adventagesHeadline, advantegeCard)
 })
