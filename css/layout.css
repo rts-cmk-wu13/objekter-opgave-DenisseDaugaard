@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: 
     [fullw-start]1fr
-    [content-start]repeat(12, 5rem)[content-end] 
+    [content-start]repeat(12, 7.5rem)[content-end] 
     1fr[fullw-end];
-    gap: 2rem;
+
 }    
 
 header, main, footer{
@@ -34,3 +34,38 @@ footer>*{
     font-display: block;
 }
 
+button {
+    background-color: #F78065 ;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    
+}
+
+.icon{
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+
+main section{
+    margin-bottom: 10rem;
+}
+
+ main a{
+    text-decoration: none;
+    color:#F78065 ;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style:none ;
+}

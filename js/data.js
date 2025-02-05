@@ -95,33 +95,46 @@ let advantages = [
     },
 ]
 
-
 let footer = {
     headline: "Easy Camper",
     text: "When Passion Meets Comfort.",
-    contacts: [
+    navs: [
         {
             headline: "Discover the Network",
-            contactlist1: "Where to shop",
-            contactlist2: "Tour Guided",
-            contactlist3: "Our Tours",
-            contactlist4: "About Us"
+            link1: "Where to shop",
+            link2: "Tour Guieded",
+            link3: "Our Tours",
+            link4: "About Us"
         },
         {
             headline: "Become a Manager",
-            contactlist1: "Join your Pairing",
-            contactlist2: "Offer your Service",
-            contactlist3: "Are you a guide?"
-        
+            link1: "Join your Pairing",
+            link2: "Offer your Service",
+            link3: "Are you a guide?",
+            link4: ""
         },
         {
             headline: "Assistance",
-            contactlist1: "Support Center",
-            contactlist2: "FAQs",
-            contactlist3: "Cancallation Options",
-            contactlist4: "Reliablity and Sequrity"
-        }
-    ]
+            link1: "Support Center",
+            link2: "FAQs",
+            link3: "Cancallation Options",
+            link4: "Reliablity and Sequrity"
+        },
+        
+    ],
+
+    navBottom: {
+        copyright: "EazyCamper. All rights reserved",
+        links: {
+                link1: "About",
+                link2: "Site Map",
+                link3: "Terms",
+                link4: "Privacy Policy",
+                link5: "Teams"
+            },
+        
+    },
+    
 }
 
 // Opret dit dataobjekt til footerens indhold herunder

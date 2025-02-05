@@ -16,7 +16,7 @@ heroDocument.append(heroContainer)
 let heroText = document.createElement("div")
 
 heroText.classList.add("hero__text")
-heroText.innerHTML = `<h1>${hero.headline}</h1>
+heroText.innerHTML = `<h1>Find out how we can <span class="oranged__text">save your time </span> in Backpacking in Europe</h1>
                      <p>${hero.copy}</p>
                      <button class="hero__text__btn"><img class="icon" src="${hero.icon}" alt=""> Explore</button>`
 //console.log(heroText);
@@ -31,7 +31,7 @@ services.forEach(function(service){
   serviceCard.innerHTML = `<figure class="service__card__img__contentainer">
                             <img class="service__card__img" src="${service.illustration}" alt="random image">
                             </figure>
-                            <section class="sercice__card__text">
+                            <section class="service__card__text">
                                 <h3>${service.headline}</h3>
                                 <p>${service.text}</p>
                                 <a href="#">${service.linktext}</a>
@@ -92,6 +92,9 @@ sites.places.forEach(function(place){
 /* --------------------------- advantages -------------------- */
 
 let advantagesSection = document.querySelector(".advantages")
+let adventagesHeadline = document.createElement("h2")
+  adventagesHeadline.classList.add("no-columns" , "adventages-headline")
+  adventagesHeadline.textContent = "Our Advantages"
 
 advantages.forEach(function(advantege){
   let advantegeCard = document.createElement("div")
@@ -104,7 +107,7 @@ advantages.forEach(function(advantege){
                         <p>${advantege.text}</p>
                         <a href="#">Show more</a>
                        </section>`
-  advantagesSection.append(advantegeCard)
+  advantagesSection.append(adventagesHeadline, advantegeCard)
 })
 
 /* -------------------------footer-------------------------------------- */
@@ -112,23 +115,34 @@ advantages.forEach(function(advantege){
 let footerSection = document.querySelector(".footer")
 
 let footerFirstDiv = document.createElement("div")
-footerFirstDiv.classList.add("footer__column")
+footerFirstDiv.classList.add("footer__first__div")
 footerFirstDiv.innerHTML = `<h2>${footer.headline}</h2>
-                            <p>${footer.text}</p>
+                            <h1>${footer.text}</h1>
                             `
-footer.contacts.forEach(function(contact){
-  let footerContacDiv = document.createElement("div")
-  footerContacDiv.classList.add("footer__column")
-  footerContacDiv.innerHTML = `<div>
-                                <h3>${contact.headline}</h3>
+let footerNavBottom = document.createElement("div")
+footerNavBottom.classList.add("footer__bottom__div")
+footerNavBottom.innerHTML = `<p>${footer.navBottom.copyright}</p>
+                            <ul>
+                              <li><a href="#">${footer.navBottom.links.link1}</a></li>
+                              <li><a href="#">${footer.navBottom.links.link2}</a></li>
+                              <li><a href="#">${footer.navBottom.links.link3}</a></li>
+                              <li><a href="#">${footer.navBottom.links.link4}</a></li>
+                              <li><a href="#">${footer.navBottom.links.link5}</a></li>
+                            </ul>`
+                
+footer.navs.forEach(function(nav){
+  let footerNavDiv = document.createElement("div")
+  footerNavDiv.classList.add("footer__column")
+  footerNavDiv.innerHTML = `
+                                <h3>${nav.headline}</h3>
                                 <ul>
-                                  <li>${contact.contactlist1}</li>
-                                  <li>${contact.contactlist2}</li>
-                                  <li>${contact.contactlist3}</li>
-                                  <li>${contact.contactlist4}</li>
+                                  <li><a href="#">${nav.link1}</a></li>
+                                  <li><a href="#">${nav.link2}</a></li>
+                                  <li><a href="#">${nav.link3}</a></li>
+                                  <li><a href="#">${nav.link4}</a></li>
                                 </ul>
-                              </div>`
-  footerSection.append(footerFirstDiv)
+                              `
+  footerSection.append( footerNavBottom,footerNavDiv, footerFirstDiv)
 })
                             
 

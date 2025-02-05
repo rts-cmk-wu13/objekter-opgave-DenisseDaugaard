@@ -3,10 +3,28 @@
     grid-column: span 3;
 }
 
-.facility-headline{
+.facility{
+    padding: 2rem;
+}
+.facility__text>*{
+   margin-bottom: 2.25rem;
+}
+
+.facility-headline,
+.adventages-headline{
     grid-row: 1;
-    margin-block: 2rem ;
-    font-size: 2rem;
+    margin-block: 2rem 7.2rem ;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.facility__text h3{
+    font-size: 1.36rem;
+    font-weight: bold;
+}
+.facility__text p{
+    font-size: 0.85rem;
+    color: grey;
 }
 
 .icon__2 {
