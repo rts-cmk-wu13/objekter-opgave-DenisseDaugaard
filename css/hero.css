@@ -1,0 +1,33 @@
+section.hero{
+    position: relative;
+    margin-bottom: 24rem;
+}
+
+
+.hero__text{
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    width: 50%;
+    height: 33rem;
+    background-color: white;
+    padding: 3.5rem;
+    font-size: 1.7rem;
+    border: none;
+    box-shadow: -1px 1px 3px hsla(0, 8%, 92%, 0.901); 
+}
+
+.hero__text>*{
+    margin-bottom: 2.125rem;
+}
+
+
+.oranged__text{
+    color: var(--primary-color);
+}
+
+.hero__text__btn{
+    padding: 1.3rem 4rem;
+}
+
+

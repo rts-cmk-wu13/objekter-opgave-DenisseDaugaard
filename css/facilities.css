@@ -1,0 +1,36 @@
+.facility,
+.place{
+    grid-column: span 3;
+}
+
+.facility{
+    padding: 2rem 2rem 2rem 0;
+}
+.facility__text>*,
+.advantages__text>*{
+   margin-bottom: 2.25rem;
+}
+
+.facility-headline,
+.adventages-headline{
+    grid-row: 1;
+    margin-block: 2rem 7.2rem ;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.facility__text h3,
+.advantages__text h3{
+    font-size: 1.36rem;
+    font-weight: bold;
+}
+.facility__text p,
+.advantages__text p{
+    font-size: 0.85rem;
+    color: grey;
+}
+
+.icon__2 {
+    width: 2.5rem;
+    margin-bottom: 5rem;
+}

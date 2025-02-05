@@ -1,0 +1,35 @@
+.sites__start__div{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    margin-right: 7rem;
+}
+.sites__start__div>*{
+   margin-bottom: 2rem;
+}
+.sites__start__div button{
+  padding: 1.6rem 5.2rem;
+}
+
+.sites__start__div h2{
+   font-size: 2.25rem;
+}
+.sites__start__div p{
+   font-size: 1.125rem;
+   color: grey;
+}
+
+.place figure {
+    width:  16rem;
+    height: 26.125rem;
+}
+.place__text>*{
+    margin-bottom: 0.75rem;
+}
+.place__text p{
+    color: grey;
+    font-size: 0.85rem;
+}
+.place__text a{
+    font-weight: normal;
+}
+
